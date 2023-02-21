@@ -1,7 +1,7 @@
 import BigNumber from 'bignumber.js';
 import { ethers } from 'hardhat';
 import { Contract } from 'ethers';
-import { globalParams } from '../deployed_contracts';
+import { globalParams } from '../constants';
 import { MyContract } from '../typechain-types';
 import { MyContract__factory } from '../typechain-types/factories/MyContract__factory';
 import { stringToBytes32 } from '../helpers/utils';
@@ -14,7 +14,7 @@ async function main() {
   const accounts = await ethers.getSigners();
   const DeFiScoreIdType = stringToBytes32(globalParams.DeFiScore.scoreIdType);
 
-  // create instance of deployed Scoracle contract 
+  // create instance of deployed Scoracle contract
   const myContract: MyContract = MyContract__factory.connect(globalParams.MyContract[network], hardhat.ethers.provider);
 
   // Prequalify

@@ -3,7 +3,7 @@ import BigNumber from 'bignumber.js';
 import { expect } from 'chai';
 import { ContractTransaction } from 'ethers';
 import { ethers, network } from 'hardhat';
-import { globalParams } from '../deployed_contracts';
+import { globalParams } from '../constants';
 import { signScoracleMessage, stringToBytes32 } from '../helpers/utils';
 import { MyContract } from '../typechain-types';
 

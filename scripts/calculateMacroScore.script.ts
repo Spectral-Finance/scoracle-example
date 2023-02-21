@@ -1,7 +1,7 @@
 import BigNumber from 'bignumber.js';
 import { ethers } from 'hardhat';
 import { Contract } from 'ethers';
-import { globalParams } from '../deployed_contracts';
+import { globalParams } from '../constants';
 import { MyContract } from '../typechain-types';
 import { MyContract__factory } from '../typechain-types/factories/MyContract__factory';
 import { eEthereumNetwork } from '../helpers/types';
@@ -15,9 +15,9 @@ async function main() {
   const DeFiScoreIdType = stringToBytes32(globalParams.DeFiScore.scoreIdType);
   const baseFee = ethers.utils.parseEther('0');
 
-  // create instance of deployed Scoracle contract 
+  // create instance of deployed Scoracle contract
   const myContract: MyContract = MyContract__factory.connect(globalParams.MyContract[network], hardhat.ethers.provider);
-  
+
   // get chain ID
   const chainId = (await myContract.provider.getNetwork()).chainId;
 
