@@ -1,7 +1,7 @@
 import BigNumber from 'bignumber.js';
 import { ethers } from 'hardhat';
 import { Contract } from 'ethers';
-import { globalParams } from '../environments';
+import { globalParams } from '../environment';
 import { MyContract } from '../typechain-types';
 import { MyContract__factory } from '../typechain-types/factories/MyContract__factory';
 import { stringToBytes32 } from '../helpers/utils';
