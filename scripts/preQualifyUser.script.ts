@@ -9,6 +9,8 @@ import { eEthereumNetwork } from '../helpers/types';
 
 const hardhat = require('hardhat');
 
+// PreQualify user by reading their score from Scoracle.sol state and 
+// seeing if their MACRO score is high enough to prequalify for "loan".
 async function main() {
   const network: eEthereumNetwork = hardhat.network.name;
   const accounts = await ethers.getSigners();

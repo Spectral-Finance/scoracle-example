@@ -2,6 +2,7 @@ import { ethers } from 'hardhat';
 import { MyContract } from '../typechain-types';
 const hardhat = require('hardhat');
 
+// Deploys the MyContract.sol contract
 async function main() {
   // deploy MyContract.sol
   const myContractFactory = await ethers.getContractFactory('MyContract');

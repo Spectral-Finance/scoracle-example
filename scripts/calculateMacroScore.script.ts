@@ -9,6 +9,7 @@ import { signScoracleMessage, stringToBytes32 } from '../helpers/utils';
 
 const hardhat = require('hardhat');
 
+// Calculates the user's score by requesting score from deployed Scoracle.sol contract
 async function main() {
   const network: eEthereumNetwork = hardhat.network.name;
   const accounts = await ethers.getSigners();
