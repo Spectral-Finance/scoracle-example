@@ -23,7 +23,7 @@ contract MyContract {
     // prequalifyUser - The function reads the user's score from the Scoracl contract's state and will prequalify the user for X depending on their score.
     function prequalifyUser(
         bytes32 _scoreTypeJobId
-    ) public returns (bool prequalified, uint256 score) {
+    ) public view returns (bool prequalified, uint256 score) {
 
         IScoracle scoracle = IScoracle(SCORACLE_ADDRESS);
 
