@@ -18,7 +18,7 @@ MNEMONIC=
 
 `ALCH_STAGING_TOKEN` - obtain a key from https://www.alchemy.com/.
 `INFURA_TOKEN` - obtain a key from https://www.infura.io/
-`MNEMONIC` - to see how obtain your mnemonic, please visit https://www.alphr.com/metamask-get-secret-recovery-phrase/
+`MNEMONIC` - to see how to obtain your mnemonic, please visit https://www.alphr.com/metamask-get-secret-recovery-phrase/
 
 
 4. Compile smart contracts: `yarn compile`
