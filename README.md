@@ -8,7 +8,7 @@
 
 2. Install dependencies: `yarn install`
 
-3. Populate environemnt variables in `.env`. Env vars are managed by using [direnv](https://direnv.net)
+3. Populate environment variables in `.env`. Env vars are managed by [direnv](https://direnv.net)
 
 ```
 ALCH_STAGING_TOKEN=
