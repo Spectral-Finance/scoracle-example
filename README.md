@@ -1,7 +1,7 @@
 # scoracle-example
 
 ## Getting Started
-1. nvm use 16.14.2
+1. Use the correct node version with `nvm use 16.14.2`
 
 2. Install Dependencies with `yarn install`
 
