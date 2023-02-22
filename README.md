@@ -1,22 +1,24 @@
 # scoracle-example
 
 ## Getting Started
-1. Install Dependencies with `yarn install`
+1. nvm use 16.14.2
 
-2. Populate environemnt variables in `.env`
+2. Install Dependencies with `yarn install`
+
+3. Populate environemnt variables in `.env`
 ```
 ALCH_STAGING_TOKEN=
 INFURA_TOKEN=
 MNEMONIC=
 ```
 
-3. Compile smart contracts with `yarn compile`
+4. Compile smart contracts with `yarn compile`
 
-4. Deploy `MyContract.sol` with `yarn deploy:myContract:arbitrumGoerli`
+5. Deploy `MyContract.sol` with `yarn deploy:myContract:arbitrumGoerli`
 
-5. Calculate Score with `yarn calculateScore:myContract:arbitrumGoerli`
+6. Calculate Score with `yarn calculateScore:myContract:arbitrumGoerli`
 
-6. Read Score and check to see if you're "prequalified" with `yarn prequalifyUser:myContract:arbitrumGoerli`
+7. Read Score and check to see if you're "prequalified" with `yarn prequalifyUser:myContract:arbitrumGoerli`
 
 The `prequalify` function and script is just an example of how you could use the MACRO score in your application. You could use it to prequalify a user for a loan, gate them from participating in a liquidity pool, enable a Buy-Now-Pay-Later escrow contract, etc. There are many ways the MACRO score could be used.
 
