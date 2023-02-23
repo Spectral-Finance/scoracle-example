@@ -18,9 +18,9 @@ INFURA_TOKEN=
 MNEMONIC=
 ```
 
-`ALCH_STAGING_TOKEN` - obtain a key from https://www.alchemy.com 
+`ALCH_STAGING_TOKEN` - create an account on https://www.alchemy.com and create an app using Goerli network to obtain a key. 
 
-`INFURA_TOKEN` - obtain a key from https://www.infura.io
+`INFURA_TOKEN` - create an account on https://www.infura.io and use "Create New Key" button to get a key.
 
 `MNEMONIC` - to see how to obtain your mnemonic, please visit https://www.alphr.com/metamask-get-secret-recovery-phrase
 
@@ -47,7 +47,10 @@ The `prequalify` function and script is an example of how you could use the MACR
 # Miscellaneous
 
 ## How to use this repository ?
-This repository contains a hardhat development environment for Solidity. You can write your contracts in the `./contracts` folder then, import the `IScoracle.sol` interface into one of your smart contract, create an instance of the contract, and then make calls to the external functions in `Scoracl.sol` contract. 
+This repository contains a hardhat development environment for Solidity. You can:
+* write your contracts in the `./contracts` folder
+* import the `IScoracle.sol` interface into one of your smart contract
+* create an instance of the contract, and then make calls to the external functions in `Scoracl.sol` contract 
 
 To see an example of the integration of Scorcle in the smart contract, check `MyContract.sol` contract. 
 To see examples of how to make calls to the Scoracle contract, check `./scripts` folder. 
