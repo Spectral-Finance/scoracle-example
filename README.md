@@ -20,7 +20,7 @@ MNEMONIC=
 
 `ALCH_STAGING_TOKEN` - create an account on https://www.alchemy.com and create an app using Goerli network to obtain a key. 
 
-`INFURA_TOKEN` - create an account on https://www.infura.io and use "Create New Key" button to get the key.
+`INFURA_TOKEN` - create an account on https://www.infura.io and use "Create New Key" button to get a key.
 
 `MNEMONIC` - to see how to obtain your mnemonic, please visit https://www.alphr.com/metamask-get-secret-recovery-phrase
 
