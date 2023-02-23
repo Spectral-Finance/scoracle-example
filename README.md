@@ -27,15 +27,19 @@ MNEMONIC=
 ## Snippets
 
 To Compile smart contracts: 
+
 `yarn compile`
 
 To Deploy `MyContract.sol`: 
+
 `yarn deploy:myContract:arbitrumGoerli`
 
 To Calculate Score: 
+
 `yarn calculateScore:myContract:arbitrumGoerli`
 
-To Read Score and check to see if you're "prequalified" with 
+To Read Score and check to see if you're "prequalified" with:
+
 `yarn prequalifyUser:myContract:arbitrumGoerli`
 
 The `prequalify` function and script is an example of how you could use the MACRO score in your application. You could use it to prequalify a user for a loan, gate them from participating in a liquidity pool, enable a Buy-Now-Pay-Later escrow contract, etc.
