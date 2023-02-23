@@ -26,19 +26,19 @@ MNEMONIC=
 
 ## Snippets
 
-To Compile smart contracts: 
+* To Compile smart contracts: 
 
 `yarn compile`
 
-To Deploy `MyContract.sol`: 
+* To Deploy `MyContract.sol`: 
 
 `yarn deploy:myContract:arbitrumGoerli`
 
-To Calculate Score: 
+* To Calculate Score: 
 
 `yarn calculateScore:myContract:arbitrumGoerli`
 
-To Read Score and check to see if you're "prequalified" with:
+* To Read Score and check to see if you're "prequalified" with:
 
 `yarn prequalifyUser:myContract:arbitrumGoerli`
 
