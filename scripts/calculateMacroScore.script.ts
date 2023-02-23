@@ -22,7 +22,7 @@ async function main() {
   // get chain ID
   const chainId = (await myContract.provider.getNetwork()).chainId;
 
-  const nonce = 0; // increment nonce by one everytime you call it. leave at 0 when you make your first request
+  const nonce = 18; // increment nonce by one everytime you call it. leave at 0 when you make your first request
 
   // // sign scorcle message
   const accountSignature = await signScoracleMessage(accounts[0], globalParams.Scoracle[network], chainId, nonce);
