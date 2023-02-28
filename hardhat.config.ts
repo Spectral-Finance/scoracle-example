@@ -21,6 +21,13 @@ const config: HardhatUserConfig = {
       gasPrice: 8000000000,
       blockGasLimit: 50450000
     },
+    polygon: {
+      url: 'https://polygon-mainnet.infura.io/v3/' + process.env.INFURA_TOKEN,
+      accounts: {
+        mnemonic: process.env.MNEMONIC as string,
+      },
+      gasPrice: 90000000000,
+    },
     hardhat: {
     },
     hardhatevm: {
