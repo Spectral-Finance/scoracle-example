@@ -21,6 +21,7 @@ export interface ScoreType {
 
 export interface ICommonConfiguration {
   DeFiScore: ScoreType;
+  NFC: iParamsPerNetwork<tEthereumAddress>;
   MyContract: iParamsPerNetwork<tEthereumAddress>;
   Scoracle: iParamsPerNetwork<tEthereumAddress>;
 }
