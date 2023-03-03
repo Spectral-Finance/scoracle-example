@@ -12,6 +12,9 @@
     "deploy:myContract:arbitrumGoerli": "hardhat --network arbitrumGoerli run scripts/deployMyContract.script.ts",
     "calculateScore:myContract:arbitrumGoerli": "hardhat --network arbitrumGoerli run scripts/calculateMacroScore.script.ts",
     "prequalifyUser:myContract:arbitrumGoerli": "hardhat --network arbitrumGoerli run scripts/preQualifyUser.script.ts",
+    "deploy:myContract:polygon": "hardhat --network polygon run scripts/deployMyContract.script.ts",
+    "calculateScore:myContract:polygon": "hardhat --network polygon run scripts/calculateMacroScore.script.ts",
+    "prequalifyUser:myContract:polygon": "hardhat --network polygon run scripts/preQualifyUser.script.ts",
     "test": "yarn compile && yarn hardhat test test/*.spec.ts",
     "test:coverage": "yarn compile && yarn hardhat coverage --testfiles 'test/*.spec.ts'"
   },
