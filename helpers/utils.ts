@@ -2,6 +2,30 @@ import { SignerWithAddress } from '@nomiclabs/hardhat-ethers/signers';
 import { ethers } from 'hardhat';
 const hardhat = require('hardhat');
 
+export const signNFCMessage = async (
+  account: SignerWithAddress,
+  nfcAddress: string,
+  chainId: number
+): Promise<string> => {
+  const content = 'This is Spectral Team. We are verifying ownership of the wallet.';
+
+  return await account._signTypedData(
+    // Domain
+    {
+      name: 'Spectral',
+      version: '1',
+      chainId: chainId,
+      verifyingContract: nfcAddress,
+    },
+    // Types
+    {
+      Value: [{ name: 'content', type: 'string' }],
+    },
+    // Value
+    { content }
+  );
+};
+
 export const signScoracleMessage = (
   account: SignerWithAddress,
   scoracleAddress: string,
